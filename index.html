@@ -15,8 +15,8 @@
         <nav> 
             <a href="index.html#cabeca">Home</a>
             <a href="#">Notícias</a>
-            <a href="index.html#curiosidades">Curiosidades</a>
-            <a id="falecons" href="index.html#footerUl">Fale Conosco</a>
+            <a onclick="irParaCuriosidades()">Curiosidades</a>
+            <a id="falecons"  onclick="irParaContatos()">Fale Conosco</a>
         </nav>
     </header>
     <main>
@@ -124,7 +124,7 @@
             <p>
                 Por Email:
                 <form action="https://formsubmit.co/alencarkauan12@gmail.com" method="POST">
-                    <input style="width: 130px; margin-left: 0px;" type="text" name="name" required placeholder="Seu nome:" >
+                    <input id="name" style="width: 130px; margin-left: 0px;" type="text" name="name" required placeholder="Seu nome:" >
                     <br>
                     <input style="width: 273px; margin-bottom: 3px;" type="email" name="email" required placeholder="Seu email:"> <br>
                     <textarea style="width: 275px;" name="message" id="" cols="30" rows="10"></textarea>
@@ -135,5 +135,6 @@
             </p>
         
         <p id="final">Site criado por <span>Gustavo Guanabara</span> para o <span>CursoemVideo</span>.</footer></p>
+        <script src="scripts.js"></script>
 </body>
 </html>
